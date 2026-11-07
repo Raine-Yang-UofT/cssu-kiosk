@@ -129,7 +129,7 @@ Use short, two-line titles and one-sentence descriptions. [DESIGN-SPEC.md](DESIG
 
 ### Current event content and provenance
 
-The two owner-supplied Instagram screenshots replace the three fictional demo posters. Each uses the shared poster composition with a reference-inspired event palette and an original local SVG illustration; the illustrations are decorative, not the original event artwork. `fumbles` pairs pale blue, navy, cloud white, and a peach repair motif with `microphone.svg`. `bytes` pairs sky blue and yellow-green with `world-food.svg` (world plate, food, and flight route). The original `code`, `play`, and `build` themes remain available. Theme and art values use separate internal allowlists in `app.js`.
+The two owner-supplied Instagram screenshots replace the three fictional demo posters. Each uses the shared poster composition with a reference-inspired event palette and an original local SVG illustration; the illustrations are decorative, not the original event artwork. `fumbles` pairs pale blue, navy, cloud white, and a peach repair motif with `microphone.svg`. `bytes` pairs sky blue and yellow-green with `world-food.svg` (world plate, food, and flight route). The owner-supplied Meetup screenshots add the LLVM / Clang event using the existing `code` theme and local `code.svg` illustration. The original `play` and `build` themes remain available. Theme and art values use separate internal allowlists in `app.js`.
 
 The current poster theme is reflected in `#screen[data-poster-theme]` so the shared masthead and notices stay legible on a light poster. These palette rules target only the poster's masthead/notice/progress, not the independent time-signal overlay; standby restores the original dark palette. No event-specific motion, remote resources, or font dependencies are introduced. The optional worker remains disabled; its shell manifest would need the event SVGs added and migration verification before any future opt-in.
 
@@ -137,10 +137,13 @@ The current poster theme is reflected in `#screen[data-poster-theme]` so the sha
 | --- | --- | --- | --- |
 | Fumbles & Failures | November 3, 2026, 1–4 PM | BA3200 | CSSU × WiCS; profs, grad students, undergrads; RSVP link in @uoftcssu bio |
 | Bytes Around the World | November 6, 2026, 3–5 PM | BA3200 | Free food |
+| LLVM / Clang Social Meetup – Toronto Area | November 12, 2026, 6:30–9 PM | Bahen Centre, BA3200, 40 St George St | Free; two technical talks followed by socializing; co-hosted with CSSU |
 
 Source: owner-provided screenshots of @uoftcssu (Fumbles & Failures is co-posted with @uoftwics), supplied for the October 31, 2026 maintenance request. The posters omit a year; 2026 follows that request context. No RSVP destination was provided, so the board refers to the account bio without inventing a URL.
 
-Both posters and their corresponding notices are eligible immediately (`startsAt: null`, `schedule: null`) to promote the upcoming events. They expire at the advertised end time, exclusively: `2026-11-03T16:00:00-05:00` and `2026-11-06T17:00:00-05:00`. Toronto is on EST after the November 1 DST change. After both expire, the existing eligibility mechanism selects the neutral community standby poster; expired event notices also disappear. The demo-price disclaimer remains in place.
+The LLVM / Clang event comes from three owner-provided Meetup screenshots supplied on November 7, 2026. Thursday, November 12 matches 2026. The screenshots list doors/socializing at 6:30–7 PM, “Getting started with LLVM (it’s not that scary!)” by Ayokunle Amodu at 7–7:30 PM, and “From OpenMP to Offload: Lowering Safe Rust to GPUs” by Manuel Drehwald at 7:30–8 PM. The remaining agenda is truncated; no further details or RSVP URL are inferred.
+
+All three posters and their corresponding notices are eligible immediately (`startsAt: null`, `schedule: null`) to promote the upcoming events. They expire at the advertised end time, exclusively: `2026-11-03T16:00:00-05:00`, `2026-11-06T17:00:00-05:00`, and `2026-11-12T21:00:00-05:00`. Toronto is on EST after the November 1 DST change. After the final event expires, the existing eligibility mechanism selects the neutral community standby poster; expired event notices also disappear. The demo-price disclaimer remains in place.
 
 Product `icon` values select local files from `assets/products/`: `cola`, `energy`, `bolt`, `chips`, `chocolate`, `icecream`, `gum`, and `mini-chocolate`. Coffee uses its own `coffee` SVG. Unknown values use the local `snack` fallback. Every visible item must retain a suitable picture.
 
