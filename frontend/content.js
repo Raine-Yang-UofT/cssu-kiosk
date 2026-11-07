@@ -48,9 +48,18 @@ window.CSSU_CONTENT = {
       eventName: "Bytes Around the World", shortTitle: "Bytes Around the World", shortDetail: "Free food · BA3200",
       meta: "Nov 6 · 3–5 PM · BA3200", tag: "FREE FOOD",
       startsAt: null, endsAt: "2026-11-06T17:00:00-05:00", schedule: null
+    },
+    {
+      id: "llvm-clang-meetup", category: "TORONTO SOCIAL · CSSU", theme: "code", art: "code", isSample: false,
+      title: ["LLVM / Clang", "Meetup"], accentLine: 1,
+      description: "Technical talks & LLVM social.",
+      eventName: "LLVM / Clang Toronto Meetup", shortTitle: "LLVM / Clang Meetup", shortDetail: "Free · Talks & social · BA3200",
+      meta: "Nov 12 · 6:30–9 PM · BA3200", tag: "FREE · TALKS & SOCIAL",
+      startsAt: null, endsAt: "2026-11-12T21:00:00-05:00", schedule: null
     }
   ],
   announcements: [
+    { text: "LLVM / Clang Meetup · Nov 12, 6:30–9 PM · Bahen BA3200 · Free technical talks & social.", startsAt: null, endsAt: "2026-11-12T21:00:00-05:00", schedule: null },
     { text: "Fumbles & Failures · Nov 3, 1–4 PM · BA3200 · RSVP via @uoftcssu bio.", startsAt: null, endsAt: "2026-11-03T16:00:00-05:00", schedule: null },
     { text: "Bytes Around the World · Nov 6, 3–5 PM · BA3200 · Free food!", startsAt: null, endsAt: "2026-11-06T17:00:00-05:00", schedule: null },
     { text: "Demo menu · Confirm current prices and availability at the counter.", startsAt: null, endsAt: null, schedule: null },
