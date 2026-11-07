@@ -121,10 +121,11 @@ Use explicit-offset ISO timestamps for absolute validity, with `startsAt` inclus
 | --- | --- | --- |
 | Fumbles & Failures | November 3, 2026, 1–4 PM; BA3200 | `2026-11-03T16:00:00-05:00` |
 | Bytes Around the World | November 6, 2026, 3–5 PM; BA3200 | `2026-11-06T17:00:00-05:00` |
+| LLVM / Clang Social Meetup – Toronto Area | November 12, 2026, 6:30–9 PM; BA3200 | `2026-11-12T21:00:00-05:00` |
 
 The supplied posters omit a year; 2026 follows the owner's October 31 maintenance context, as recorded in README.md. Toronto is on EST for these event dates. Event facts, prices, and validity must not change as a side effect of a visual edit.
 
-Eligibility refreshes once per second without a release or reload. After the first expiry, only Bytes remains. After the second, show the original dark-teal `code` standby poster: “Your space.” / “Your people.”, with “No events are scheduled right now.” and the community-board tag. Do not restore fictional event posters. Expired data stays in the source but is excluded from playback. Keep the price ribbon, ordinary notices, integrated clock, and scheduled world-time broadcasts running. If expiry happens during a broadcast, complete the broadcast and reveal the eligible poster or standby afterward.
+Eligibility refreshes once per second without a release or reload. After the first expiry, Bytes and LLVM / Clang remain; after the second, only LLVM / Clang remains. The LLVM / Clang poster reuses the existing dark-teal `code` theme and local `code.svg` artwork. After its November 12 expiry, show the original dark-teal `code` standby poster: “Your space.” / “Your people.”, with “No events are scheduled right now.” and the community-board tag. Do not restore fictional event posters. Expired data stays in the source but is excluded from playback. Keep the price ribbon, ordinary notices, integrated clock, and scheduled world-time broadcasts running. If expiry happens during a broadcast, complete the broadcast and reveal the eligible poster or standby afterward.
 
 ## 5. Product ribbon
 
